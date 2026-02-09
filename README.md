@@ -1,7 +1,7 @@
 # Survival Topology: A Control Theory Framework for General Intelligence
 
 **Version:** 1.0 (Draft)  
-**Author:** Eric Asahi  
+**Author:** Eric Lin
 **Date:** Feb 2026  
 **License:** MIT  
 
