@@ -1,0 +1,11 @@
+{
+  "n_train": 40,
+  "n_val": 10,
+  "doc_types": [
+    "constitutional",
+    "technical",
+    "interpretability",
+    "philosophical"
+  ],
+  "vocab_size": 50000
+}
