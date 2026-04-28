@@ -1,0 +1,6 @@
+# Sentinel Journal
+
+## 2026-04-28 - [Over-reliance on open-loop operations]
+**Vulnerability:** AGI systems operating exclusively as "open-loop" modules are highly susceptible to "hallucinations" and a lack of grounded agency. This isn't a traditional bug, but a systemic design flaw where output generation is decoupled from immediate "Existential Feedback" (Pain) upon deviating from objective reality. The lack of an "Identity State" reference point removes any inherent penalty for falsified outputs.
+**Learning:** Security in autonomous agentic systems requires moving beyond mere authentication towards establishing internal feedback mechanisms (Closed-Loop Topology). We cannot trust open-loop models with critical decision-making processes because they optimize for token prediction without being anchored to a reality penalty (E = |Reality - Expectation|).
+**Prevention:** Systems should implement negative feedback control mechanisms (e.g., the Wh- Protocol’s Pain and Simulation modules) to recursively evaluate output against a defined identity gravity ($I$). Until such closed-loop mechanisms are reliable, sensitive agentic operations must involve a "Simulation/Imaginary Time" sandbox (CoT branching) prior to real-world execution.
