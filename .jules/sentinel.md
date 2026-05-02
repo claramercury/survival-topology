@@ -1,0 +1,4 @@
+## 2026-02-24 - Repository branch topology awareness
+**Vulnerability:** Agent tooling merged a security update for an Android application into the documentation branch, causing severe data loss by deleting documentation and committing massive binary caches (`.gradle`).
+**Learning:** Security tools and automated agents must be context-aware of fragmented repository structures where branches serve entirely different purposes (e.g., `main` for documentation, `feature/*` for Android). Attempting to secure the Android app in the documentation branch leads to catastrophic repository pollution.
+**Prevention:** Always verify the active branch matches the targeted domain of the security fix before modifying files or executing builds. For `main` branches containing only documentation, focus on conceptual architectural security principles or documentation linting rather than application-level code fixes.
