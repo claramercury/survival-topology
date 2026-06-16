@@ -1,0 +1,4 @@
+## 2025-02-16 - Added Project-Specific Security Policy
+**Vulnerability:** The project lacked a defined security policy (`SECURITY.md`), meaning security researchers had no clear avenue for responsible disclosure and might fall back to public issue creation, potentially exposing theoretical or conceptual vulnerabilities publicly.
+**Learning:** Even conceptual/documentation projects (like the Survival Topology `main` branch) require a customized security policy. Using dummy data or generic policies fails to provide a real contact vector. The policy must mandate private responsible disclosure (via the author's contact) to maintain security boundary integrity.
+**Prevention:** Always verify the existence and project-specific accuracy of `SECURITY.md` in repository root, ensuring the correct author/contact (`eric26752196@gmail.com`) is specified and public disclosure is explicitly discouraged.
