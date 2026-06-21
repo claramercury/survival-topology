@@ -1,0 +1,4 @@
+## 2024-06-21 - [Android WebView Insecure Local File Access]
+**Vulnerability:** Android application used insecure `file:///android_asset/` scheme combined with lack of explicitly disabled `setAllowFileAccess(false)`. This creates a critical risk if user data is processed by the WebView or if other vulnerabilities exist allowing path traversal, exposing local app files to a malicious script.
+**Learning:** Legacy Android implementations often default to `file:///` scheme and permissive file access settings. Modern Android WebViews must explicitly deny file access and use `WebViewAssetLoader` via an HTTPS scheme (`https://appassets.androidplatform.net/assets/`) to safely load local assets.
+**Prevention:** Always use `WebViewAssetLoader` from `androidx.webkit` to serve local assets securely via HTTPS and enforce `webSettings.setAllowFileAccess(false)` in any WebView setup.
